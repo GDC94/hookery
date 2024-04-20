@@ -26,6 +26,7 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": "error",
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
+        "@typescript-eslint/no-unsafe-return": "error",
         "@typescript-eslint/no-unused-vars": [
             "error",
             {
