@@ -24,7 +24,7 @@ module.exports = {
         "jsx-a11y/click-events-have-key-events": "off",
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/explicit-function-return-type": "error",
-        "simple-import-sort/imports": "off",
+        "simple-import-sort/imports": "error",
         "@typescript-eslint/no-unused-vars": [
             "error",
             {
