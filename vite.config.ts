@@ -27,5 +27,16 @@ export default defineConfig({
         globals: true,
         environment: "jsdom", // diferencia entre happy-dom y jsdom
         setupFiles: "./tests/setup.ts", // aca podemos crear configs globales para todos nuestros archivos de test- Ej mocks
+        coverage: {
+            exclude: [
+                "src/**/index.ts",
+                "src/**/App.tsx",
+                "src/**/main.tsx",
+                ".eslintrc.cjs",
+                "vite.config.ts",
+                "commitlint.config.cjs",
+                "src/vite-env.d.ts",
+            ],
+        },
     },
 });
