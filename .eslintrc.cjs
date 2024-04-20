@@ -28,6 +28,13 @@ module.exports = {
         "simple-import-sort/exports": "error",
         "@typescript-eslint/no-unsafe-return": "error",
         "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                selector: "interface",
+                format: ["PascalCase"],
+            },
+        ],
         "@typescript-eslint/no-unused-vars": [
             "error",
             {
