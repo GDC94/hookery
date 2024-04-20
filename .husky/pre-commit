@@ -4,7 +4,7 @@ print_success() {
   printf "${GREEN}RUNNING VALIDATIONS BEFORE COMMITTING $1${NC}\n"
 }
 print_success_lines() {
-  printf "${GREEN}================================= $1${NC}\n"
+  printf "${GREEN}==================================== $1${NC}\n"
 }
 
 print_success_lines
