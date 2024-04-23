@@ -30,6 +30,7 @@ module.exports = {
         "@typescript-eslint/no-unsafe-return": "error",
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/naming-convention": [
             "error",
             {
