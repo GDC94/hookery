@@ -10,6 +10,14 @@ interface UseCounterRes {
     counter: number;
 }
 
+/**
+ *
+ * @method useCounter
+ * @param {initialValue}
+ * @returns {increment - decrement - counter}
+ * @example
+ */
+
 export const useCounter = ({ initialValue = 0 }: UseCounterProps): UseCounterRes => {
     const [counter, setCounter] = React.useState(initialValue);
 

@@ -26,6 +26,7 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": "error",
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
+        "@typescript-eslint/no-empty-function": "off",
         "@typescript-eslint/no-unsafe-return": "error",
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/naming-convention": [

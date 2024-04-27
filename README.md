@@ -1,32 +1,35 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Get started
 
-Currently, two official plugins are available:
-
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
--   Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-    // other rules...
-    parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
-        project: ["./tsconfig.json", "./tsconfig.node.json"],
-        tsconfigRootDir: __dirname,
-    },
-};
+```
+  yarn add -D @types/node vite-plugin-dts // exponer los tipos
 ```
 
--   Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
--   Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
--   Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Eslint
 
-npm install --save-dev @testing-library/react-hooks @testing-library/jest-dom jsdom @testing-library/react
+```
+ yarn add -D eslint-plugin-react-hooks eslint-plugin-simple-import-sort
+```
+
+### Testing
+
+yarn add -D
+vitest
+@testing-library/react-hooks
+@testing-library/jest-dom jsdom
+@testing-library/react
+
+### Versioning
+
+npm version patch -> incrementa el patch del package.json
+npm version prepatch -> pasa de la versión 1.0.0 a 1.0.0-1 (util cuando tenemos entornos pre-productivos)
+
+npm version minor
+npm version preminor
+
+npm version major
+npm version premajor
+
+Datadog (latencia entre los servicios)
+Datadog (errores de aplicacion) + Sentry (errores en tiempo de ejecución)

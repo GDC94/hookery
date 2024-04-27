@@ -9,6 +9,11 @@ import reactLogo from "./assets/react.svg";
 function App(): JSX.Element {
     const [count, setCount] = useState(0);
 
+    /*
+    const onClick = useEvent((): void => {
+        console.log("send text");
+    });
+    */
     return (
         <>
             <div>
@@ -22,6 +27,8 @@ function App(): JSX.Element {
             <h1>Vite + React</h1>
             <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
+
+                {/*       <Button onClick={onClick} /> */}
                 <p>
                     Edit <code>src/App.tsx</code> and save to test HMR
                 </p>
