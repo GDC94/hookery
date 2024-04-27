@@ -1,34 +1,31 @@
-## Server Side Rendering
+## Sentry vs Datadog
 
-Cuando hacemos ssr inyectamos el HTML dentro de lo que es el body. Mejoramos la seguridad de la aplicacion porque no se podran inyectar scripts del lado del cliente
-y porque ademas, ya no se vera, en la pestaña de networks las llamadas a las api, porque todo eso se hara en el servidor.
-El cliente no tiene acceso, el server retorna un html estatico y cuando el navegador lo recibe lo renderiza en la pagina y debe darle interactividad,
-entonces react necesita construir el arbol de componentes a traves de la hidratacion: Hacer el HTML interactivo a traves de la construccion de un grafo de componentes-
+### Sentry
 
-Y el virtual DOM?
-React contruye el virtual dom, hace todos los cambios alli, los agrupa y los lleva al DOM para que ocurra el proceso de pintado-
+-   **Propósito**: Sentry se centra principalmente en la detección y resolución de errores en el software en tiempo real. Su objetivo principal es ayudar a los desarrolladores a identificar, priorizar y corregir errores que ocurren en sus aplicaciones.
 
-Y la Re hidratacion?
+-   **Funcionalidades principales**:
+    -   Monitoreo de errores: Sentry rastrea los errores que ocurren en una aplicación y proporciona detalles sobre cuándo, dónde y cómo ocurrieron.
+    -   Informes detallados: Ofrece información detallada sobre los errores, incluidos los registros, la traza de la pila y cualquier contexto relevante para ayudar en la resolución de problemas.
+    -   Integraciones: Se integra con una variedad de herramientas y servicios de desarrollo para facilitar la colaboración y la resolución de problemas.
+    -   Gestión de versiones: Permite asociar errores con versiones específicas del software para facilitar la identificación de problemas introducidos en nuevas versiones.
 
-Es el proceso que ocurre cuando un sitio actua de manera dinamica aquellas partes del grafo de componentes que han cambiado.
+### Datadog
 
-En el servidor no tendramos toda la parte de re renderizado, on update, ondestroy, etc
+-   **Propósito**: Datadog es una plataforma de monitoreo de infraestructura y rendimiento que proporciona visibilidad en tiempo real sobre el rendimiento y la salud de las aplicaciones, infraestructuras y servicios.
 
-## Datadog (para errores de la aplicacion ej, si aumenta latencia entre servicios)
+-   **Funcionalidades principales**:
+    -   Monitoreo de infraestructura: Datadog recopila métricas y registros de sistemas, aplicaciones y servicios en toda la infraestructura de TI.
+    -   Seguimiento de rendimiento: Permite el monitoreo del rendimiento de las aplicaciones y servicios, incluidos tiempos de respuesta, latencia y uso de recursos.
+    -   Análisis de registros: Ofrece herramientas para analizar registros de aplicaciones y sistemas para identificar problemas de rendimiento y errores.
+    -   Alertas y notificaciones: Permite configurar alertas personalizadas para eventos importantes y recibir notificaciones cuando ocurran problemas.
+    -   APM (Application Performance Monitoring): Proporciona información detallada sobre el rendimiento de las aplicaciones, incluidos tiempos de respuesta de endpoint, trazas de transacciones y métricas de rendimiento.
 
-## Sentry (para errores en tiempo de ejecucion, ej si el js rompio )
+### Uso
 
-## Jenkins
+-   **Sentry**: Se utiliza principalmente para el monitoreo y la resolución de errores en aplicaciones y servicios de software.
+-   **Datadog**: Se utiliza para el monitoreo y análisis del rendimiento de la infraestructura, las aplicaciones y los servicios, así como para la generación de alertas y notificaciones en tiempo real.
 
-Si los errores escalan hay que meter un PR de revert con el rollback correspondiente.
+## Montaje y desmontaje
 
-local ---- staging ---- night ---- produccion
-
-Night es un ambiente especial que se usa para pruebas A/B para checkear como performa alguna feature. Se otorgan accesos al ambiente y a las flags.
-
-## Que estrategia puedo usar si no quiero mostrar una lista muy larga en memoria?
-
-Paginacion , tabs o infinite scroll
-Virtualizacion de lista. (Virtual List)
-
-Si tenemos listas grandes tendremos que adoptar alguna de estas estrategias.
+-- **Desmontaje** Cuando un elemento sale de la UI, se produce un desmontaje del mismo. Ahi ocurren todos los clen ups de los componentes

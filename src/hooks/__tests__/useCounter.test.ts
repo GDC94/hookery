@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 
 import { useCounter } from "../useCounter";
 
-describe("Testing on useCounter", () => {
+describe("Testing on useCounter hook", () => {
     it("[TEST useCounter] Should increment and decrement counter properly", () => {
         const { result } = renderHook(() => useCounter({ initialValue: 0 }));
 

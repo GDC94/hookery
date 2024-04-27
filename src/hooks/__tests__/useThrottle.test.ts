@@ -3,7 +3,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { useThrottle } from "../useThrottle";
 
-describe("Testing on useThrottle", () => {
+describe("Testing on useThrottle hook", () => {
     afterEach(() => {
         vi.clearAllMocks();
     });

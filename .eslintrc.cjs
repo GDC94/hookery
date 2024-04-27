@@ -19,7 +19,7 @@ module.exports = {
     plugins: ["react-refresh", "simple-import-sort"],
     rules: {
         "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
-        "no-console": "error", // Error con los logs
+        "no-console": "off", // Error con los logs
         "jsx-a11y/no-static-element-interactions": "off",
         "jsx-a11y/click-events-have-key-events": "off",
         "@typescript-eslint/no-explicit-any": "error",
