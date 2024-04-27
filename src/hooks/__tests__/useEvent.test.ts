@@ -2,6 +2,7 @@ import { act, renderHook } from "@testing-library/react-hooks";
 import { describe, expect, it, vi } from "vitest";
 
 import { useEvent } from "../useEvent";
+
 describe("Testing on useEvent hook", () => {
     it("[TEST useEvent] Should execute the callback", () => {
         const fnMocked = vi.fn();

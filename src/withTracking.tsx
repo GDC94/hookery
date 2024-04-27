@@ -1,6 +1,7 @@
 import * as React from "react";
 
-import { useEvent, useIsInView } from "./hooks";
+import { useEvent } from "./hooks/useEvent";
+import { useIsInView } from "./hooks/useInView";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Props {}
