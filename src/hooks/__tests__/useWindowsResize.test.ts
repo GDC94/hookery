@@ -5,7 +5,7 @@ import { beforeEach, describe, expect, it, type MockInstance, vi } from "vitest"
 
 import { useWindowsResize } from "../useWindowResize";
 
-describe("Tes on useWindowsResize hook", () => {
+describe("Test on useWindowsResize hook", () => {
     let addEventListenerMock: MockInstance;
     let removeEventListenerMock: MockInstance;
 

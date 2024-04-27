@@ -41,7 +41,6 @@ export function useIsInView(ref: React.RefObject<Element | null>): boolean {
 }
 
 /*
-
 * Threshold es un concepto fundamental en diversas áreas, que se refiere a un límite o punto crítico que se utiliza para tomar decisiones, 
 * generar alertas o realizar acciones específicas en función de ciertos criterios predefinidos.
 
@@ -50,6 +49,4 @@ export function useIsInView(ref: React.RefObject<Element | null>): boolean {
 * **** Ejemplo, banners publicitarios en una app.
 * ******** Si yo solo scrolleo, quiza no veo nada de lo que va pasando, entonces yo puedo determinar que una impresion del usuario recien se producira cuando 
 * ******** el user haya visto por mas de 0.5 segundos. Esa es la diferencia entre ver e imprimir.
-
-
 */

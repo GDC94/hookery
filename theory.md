@@ -29,3 +29,5 @@
 ## Montaje y desmontaje
 
 -- **Desmontaje** Cuando un elemento sale de la UI, se produce un desmontaje del mismo. Ahi ocurren todos los clen ups de los componentes
+
+## Diferencia entre un PUT y un PATCH
