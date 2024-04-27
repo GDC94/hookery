@@ -11,11 +11,9 @@ interface UseCounterRes {
 }
 
 /**
- *
- * @method useCounter
- * @param {initialValue}
- * @returns {increment - decrement - counter}
- * @example
+ * A custom React hook that memoizes a function callback.
+ * @param callback The callback function to memoize.
+ * @returns The memoized callback function.
  */
 
 export const useCounter = ({ initialValue = 0 }: UseCounterProps): UseCounterRes => {

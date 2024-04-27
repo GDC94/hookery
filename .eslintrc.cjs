@@ -25,10 +25,13 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/explicit-function-return-type": "error",
         "simple-import-sort/imports": "error",
+        "@typescript-eslint/consistent-type-definitions": "error",
         "simple-import-sort/exports": "error",
         "@typescript-eslint/no-empty-function": "off",
         "@typescript-eslint/no-unsafe-return": "error",
         "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/naming-convention": [
             "error",
             {
